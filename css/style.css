@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    background: blue;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 60px 0;
+}
+
+.group label {
+    color: white;
+    background: blue;
+    padding: 15px 35px;
+    margin: 50px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero {
+    background: red;
+}
+
+.tabs img {
+    width: 230px;
+    height: 230px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tabs input {
+    display: none;
+}
+
+#instagram:checked ~ .facebook,
+#instagram:checked ~ .twitter,
+#instagram:checked ~ .whatsapp {
+    display: none;
+}
+
+#facebook:checked ~ .instagram,
+#facebook:checked ~ .twitter,
+#facebook:checked ~ .whatsapp {
+    display: none;
+}
+
+#twitter:checked ~ .instagram,
+#twitter:checked ~ .facebook,
+#twitter:checked ~ .whatsapp {
+    display: none;
+}
+
+#whatsapp:checked ~ .instagram,
+#whatsapp:checked ~ .twitter,
+#whatsapp:checked ~ .facebook {
+    display: none;
+}
